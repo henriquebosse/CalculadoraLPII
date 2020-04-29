@@ -17,7 +17,7 @@ public class Calculadora {
         
         ModelAndView modelAndView = new ModelAndView("index");
         Double resultado = 0.0;
-            
+            //Henrique
         switch (operador) {
             case "+":
                 resultado = Double.parseDouble(numero1) + Double.parseDouble(numero2);
