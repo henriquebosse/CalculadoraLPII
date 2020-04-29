@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Adivinhar Número Digitado</title>    
+</head>
+    <body>        
+
+        <button onclick="AdivinharNumero()">Iniciar Adivinhação</button>
+
+        <script>
+            function AdivinharNumero(){
+                var numeroPensado = Math.round(Math.random() * 100);
+                var tentativa = 1;
+
+                while(tentativa <= 3) {
+                    var numeroDigitado = prompt("Digite o um Número." + numeroPensado);
+
+                    if (numeroPensado == numeroDigitado) {                                            
+                        alert("Tentativa: " + tentativa + " - Parabéns!! Você Adivinhou o Número!!!");                        
+                        tentativa = 4;
+                    } else {
+                        alert("Tentativa: " + tentativa + " - Infelizmente você não acertou o Número");
+                    }
+                tentativa++;
+                }
+
+            };   
+
+        </script>
+        
+    </body>
+</html>    

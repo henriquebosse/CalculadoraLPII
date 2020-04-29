@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Henrique</title>
+</head>
+<body>
+    <form action="/calcula" method="POST">
+        <input type="text" name="numero1" id="numero1" />
+        <input type="text" name="numero2" id="numero2" />
+
+        <select name="operador" id="operador">
+            <option value="+">Somar</option>
+            <option value="-">Subtrair</option>
+            <option value="*">Multiplicar</option>
+            <option value="/">Dividir</option>
+            <option value="" selected>Selecione Uma Operação</option>
+        </select>
+
+        <input type="submit" value="Calcular" />
+    </form>  
+    <div th:text="${mensagem}">
+            
+    </div>
+</body>
+</html>

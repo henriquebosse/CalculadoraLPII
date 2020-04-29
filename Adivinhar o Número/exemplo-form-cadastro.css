@@ -1,0 +1,26 @@
+p {
+    border: 1px solid blue;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+fieldset,label {
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+input {
+    border: 1px solid black;
+}
+
+input[type=submit] {
+    padding: 10px;
+}
+
+div, fieldset {
+    margin: 10px;
+}
+
+.erro {
+    border: 1px solid red;
+}
